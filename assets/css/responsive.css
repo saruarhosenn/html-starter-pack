@@ -1,0 +1,194 @@
+/*
+=========================================
+Increase Container Breakpoint
+=========================================
+*/
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1795px;
+  }
+}
+
+/*
+=========================================
+Responsive Breakpoint
+=========================================
+*/
+@media (max-width: 1999px) {
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+}
+
+@media (max-width: 1799px) {
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+}
+
+@media (max-width: 1599px) {
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+}
+
+@media (max-width: 1399px) {
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+}
+
+@media (max-width: 1199px) {
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+}
+
+@media (max-width: 991px) {
+  /* 
+	--------------------------------------
+	Header Section Responsive
+	--------------------------------------
+	*/
+  .navBar .main-menu {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: -150%;
+    padding: 3rem;
+    background: var(--text-color4);
+    width: 32rem;
+    z-index: 9999;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .navBar .main-menu::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+  .navBar .open-menu {
+    left: 0%;
+    -webkit-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+  }
+
+  .navBar .main-menu .menu-item:not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .navBar .main-menu .menu-item .menu-link {
+    color: var(--secondary-color);
+  }
+
+  .navBar .main-menu .menu-item .menu-link::after {
+    background: var(--secondary-color);
+  }
+
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+}
+
+@media (max-width: 767px) {
+  /* 
+	--------------------------------------
+	Header Section Responsive
+	--------------------------------------
+	*/
+
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+}
+
+@media (max-width: 575px) {
+  /* 
+	--------------------------------------
+	Header Section Responsive
+	--------------------------------------
+	*/
+
+  /* 
+	--------------------------------------
+	 Section Responsive
+	--------------------------------------
+	*/
+}
+
+@media (max-width: 425px) {
+  /* 
+	  --------------------------------------
+	   Section Responsive
+	  --------------------------------------
+	  */
+}
+
+@media (max-width: 370px) {
+  /* 
+	--------------------------------------
+	Header Section Responsive
+	--------------------------------------
+	*/
+  .navBar .main-menu {
+    width: 100%;
+  }
+}

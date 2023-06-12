@@ -1,0 +1,708 @@
+/* 
+================================================
+Variables
+================================================
+*/
+:root {
+  /*_______ Font Family _______*/
+  --primary-font-700: "";
+  --primary-font-500: "";
+  --primary-font-400: "";
+  --secondary-font-700: "";
+  --secondary-font-400: "";
+  --third-font-700: "";
+  --third-font-400: "";
+  
+  /*________ Font Size ________*/
+  --size-3xl: 6rem;
+  --size-2xl: 5rem;
+  --size-xl: 3rem;
+  --size-lg: 2.5rem;
+  --size-md: 1.8rem;
+  --size-sm: 1.6rem;
+  
+  /*________ Text Color ________*/
+  --primary-color: #3a3d3e;
+  --secondary-color: #ffffff;
+  --text-color3: #00aa55;
+  --text-color4: #0099ff;
+  
+  /*_________ BG Color _________*/
+  --primary-bg: #3a3d3e;
+  --secondary-bg: #ffffff;
+  --bg-color3: #00aa55;
+  --bg-color4: #0099ff;
+
+  /*_______ Border Color _______*/
+  --primary-border: #3a3d3e;
+  --secondary-border: #00aa55;
+  --third-border:#0099ff;
+
+  /*________ Box Shadow ________*/
+  --primary-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --secondary-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+  --third-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
+/* 
+================================================
+Variables
+================================================
+*/
+
+
+/* 
+===============================================
+Bacic Setup
+===============================================
+*/
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font-400);
+  font-size: var(--size-md);
+  color: var(--primary-color);
+  line-height: 1.6;
+  background-color: var(--secondary-bg);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: var(--text-color3);
+  color: var(--secondary-color);
+}
+
+::selection {
+  background-color: var(--text-color3);
+  color: var(--secondary-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color3);
+  height: 6rem;
+}
+
+a,
+span,
+label {
+  display: inline-block;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:focus {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 
+---------
+Remove Bootstrap style
+------------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  opacity: 1;
+  background-color: transparent;
+}
+
+/* 
+===================================
+Font Family
+===================================
+*/
+.primary-font-700 {
+  font-family: var(--primary-font-700);
+}
+
+.primary-font-500 {
+  font-family: var(--primary-font-500);
+}
+
+.primary-font-400 {
+  font-family: var(--primary-font-400);
+}
+
+.secondary-font-700 {
+  font-family: var(--secondary-font-700);
+}
+
+.secondary-font-400 {
+  font-family: var(--secondary-font-400);
+}
+
+.third-font-700 {
+  font-family: var(--third-font-700);
+}
+
+.third-font-400 {
+  font-family: var(--third-font-400);
+}
+
+/* 
+  ===================================
+  Font Size
+  ===================================
+  */
+.size-3xl {
+  font-size: var(--size-3xl);
+  line-height: 1.4;
+}
+
+.size-2xl {
+  font-size: var(--size-2xl);
+  line-height: 1.4;
+}
+
+.size-xl {
+  font-size: var(--size-xl);
+  line-height: 1.4;
+}
+
+.size-lg {
+  font-size: var(--size-lg);
+  line-height: 1.4;
+}
+
+.size-md {
+  font-size: var(--size-md);
+  line-height: 1.4;
+}
+
+.size-sm {
+  font-size: var(--size-sm);
+  line-height: 1.4;
+}
+
+/* 
+  ===================================
+  Text Color
+  ===================================
+  */
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.text-color3 {
+  color: var(--text-color3);
+}
+
+.text-color4 {
+  color: var(--text-color4);
+}
+
+/* 
+  ===================================
+  BG Color
+  ===================================
+  */
+.primary-bg {
+  background-color: var(--primary-bg);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-bg);
+}
+
+.bg-color3 {
+  background-color: var(--bg-color3);
+}
+
+.bg-color4 {
+  background-color: var(--bg-color4);
+}
+
+/*
+======================================
+Start Loader Style 
+======================================
+*/
+.section-loader {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #100e17;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+}
+
+.section-loader .loader {
+  position: relative;
+}
+
+.section-loader .loader .loader-circle {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  border-width: 0.4rem;
+  border-style: solid;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.section-loader .loader .loader-circle:nth-child(1) {
+  border-color: #e91e63;
+}
+
+.section-loader .loader .loader-circle:nth-child(2) {
+  border-color: #0dbda1;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.section-loader .loader {
+  width: 20rem !important;
+  height: 20rem !important;
+  -webkit-transform: translate(-10rem, -10rem) scale(1) translate(10rem, 10rem);
+  transform: translate(-10rem, -10rem) scale(1) translate(10rem, 10rem);
+}
+
+@keyframes loader {
+  0% {
+    top: 9.4rem;
+    left: 9.4rem;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 5.7rem;
+    left: 5.7rem;
+    width: 7.4rem;
+    height: 7.4rem;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    top: 9.4rem;
+    left: 9.4rem;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 5.7rem;
+    left: 5.7rem;
+    width: 7.4rem;
+    height: 7.4rem;
+    opacity: 0;
+  }
+}
+
+.disppear {
+  -webkit-animation: vanish 1s forwards;
+  animation: vanish 1s forwards;
+}
+
+@-webkit-keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*
+======================================
+End Loader Style 
+======================================
+*/
+
+/* 
+=========================================
+Start Reuseble Css Classes
+=========================================
+*/
+.section-y-space {
+  padding: 10rem 0;
+}
+
+.section-t-space {
+  padding-top: 10rem;
+}
+
+.section-b-space {
+  padding-bottom: 10rem 0;
+}
+
+.t-linear {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+a,
+button,
+img,
+svg,
+svg path,
+span,
+.t-ease-in-out {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* 
+=========================================
+End Reuseble Css Classes
+=========================================
+*/
+
+/* 
+=========================================
+Start Reuseble Components
+=========================================
+*/
+/**** Back To Top Button ****/
+#scroll-up-btn {
+  opacity: 0;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 99;
+  background: var(--text-color4);
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+/* 
+=========================================
+End Reuseble Components
+=========================================
+*/
+
+/* 
+=========================================
+Start Header Section
+=========================================
+*/
+.transparent-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  z-index: 999;
+}
+
+.navBar .logo img {
+  max-width: 6rem;
+}
+
+.navBar .menu-open-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.navBar .menu-open-btn .menu-bar {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.navBar .main-menu .menu-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.navBar .main-menu .menu-item .menu-link {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  position: relative;
+  color: var(--primary-color);
+  font-size: var(--size-sm);
+}
+
+.navBar .main-menu .menu-item .menu-link:hover {
+  color: var(--primary-color);
+}
+
+/**** Animated Underline ****/
+.navBar .main-menu .menu-item .menu-link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  height: 0.3rem;
+  background-color: var(--text-color3);
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  -o-transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+}
+
+.navBar .main-menu .menu-item .menu-link:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.navBar .main-menu .menu-item:first-child a::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/**** Sticky Menu ****/
+.stick {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  -webkit-animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/* 
+=========================================
+End Header Section
+=========================================
+*/
+
+/* 
+=========================================
+Start Hero Section
+=========================================
+*/
+
+/* 
+=========================================
+End Hero Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
